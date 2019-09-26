@@ -17,8 +17,20 @@ else if (x > y)
 {
   printf("x is greater than y\n");
 }
-else if (x == y)
+else
 {
   printf("x is equal to y\n");
+}
+
+// looping infinitely....
+while (true) //evaluates if true is true
+{
+  printf("hello, world\n");
+}
+
+// incrementing loop
+for (int i = 0; i < 50; i++)
+{
+  printf("hello, world\n");
 }
 
