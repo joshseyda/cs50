@@ -6,7 +6,7 @@ counter ++; // increment variable by 1
 printf(counter\n);
 
 int x = 3;
-int y = 8
+int y = 8;
 
 // basic pattern of conditional statements
 if (x < y)
@@ -34,3 +34,6 @@ for (int i = 0; i < 50; i++)
   printf("hello, world\n");
 }
 
+// function that takes input and returns value
+string answer = get_string("What's your name?\n");
+printf("hello, %s", answer); // %s is a format placeholder for the string answer, it tells C to print in its place
