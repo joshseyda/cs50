@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-void cough(void)
-{
-    printf("cough\n");
-}
+void cough(void); //this is the prototype of the function, can be used here to prevent error, and the actual definition can be placed later
 
 int main(void)
 {
@@ -13,4 +10,7 @@ int main(void)
     }
 }
 
-
+void cough(void)
+{
+    printf("cough\n");
+}
