@@ -15,4 +15,15 @@
 ###### I LOVE YOU == 73 76 79 86 69 89 79 85
 ###### A most rudimentary cipher, key of 1, new  message = (+1) 74 77 80 87 70 90 80 86. As text this would be JMPWFZPV. Obviously this(and basic substitution) is a very weak cipher, but the premise and mechanisim is there. 
 #### Keep main code near the top, with new functions you can create prototypes of them in the top of the file with the full declaration after the main.
-#### 
+#### the command echo $? is a command that will print the return value of main after a program has run
+#### Intro to sorting:   
+#### Bubble sort-pairwise comparison until the array is ordered.
+##### `repeat until no swaps
+#####    for i from 0 to n-2
+#####     if i'th and i+1'th elements out of order
+#####      swap them`
+#### Selection sort-select for relevance  first, and keep 'ignoring' other indecies.
+##### ` for i from 0 to n-1
+#####     find smallest element between i'th and n-1'th
+#####       swap smallest with i'th element` 
+#### Both have similar amount of steps: (n-1)+(n-2)+...+1 equivalent to n(n-1)/2
