@@ -18,12 +18,15 @@
 #### the command echo $? is a command that will print the return value of main after a program has run
 #### Intro to sorting:   
 #### Bubble sort-pairwise comparison until the array is ordered.
-##### `repeat until no swaps
+##### ``` javascript
+##### repeat until no swaps
 #####    for i from 0 to n-2
 #####     if i'th and i+1'th elements out of order
-#####      swap them`
+#####      swap them ```
 #### Selection sort-select for relevance  first, and keep 'ignoring' other indecies.
-##### ` for i from 0 to n-1
+##### ``` javascript
+#####   for i from 0 to n-1
 #####     find smallest element between i'th and n-1'th
-#####       swap smallest with i'th element` 
-#### Both have similar amount of steps: (n-1)+(n-2)+...+1 equivalent to n(n-1)/2
+#####       swap smallest with i'th element ``` 
+#### Both have similar amount of steps: (n-1)+(n-2)+...+1 equivalent to n(n-1)/2 or O(n^2) (time complexity notation)
+
