@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <string.h>
 
-bool compare_strings( string a, string b);
+bool compare_strings( char *a, char *b);
 
 int main(void)
 {
-    string s = get_string("s: ");
-    string t = get_string("t: ");
+    char *s = get_string("s: ");
+    char *t = get_string("t: ");
 
     if(compare_strings(s, t))
     {
@@ -19,7 +19,7 @@ int main(void)
     }
 }
 
-bool compare_strings( string a, string b)
+bool compare_strings( char *a, char *b)
 {
     if (strlen(a) != strlen(b))
     {
