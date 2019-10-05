@@ -38,3 +38,6 @@
 
 #### Merge sort-leverage the power of multi-dimensional arrays! Split it in half, forming two arrays, sort one first by subdividing, continue subdividing until a single character, then compare with the next, merge the two together as a sorted pair. Move up in pairs, until the first half is pre-sorted, then compare the groups to sort. Repeat this process on the second half. Merge both halfs. Sounds verbose, but actually much faster than previous algorithms. Time complexity is O(n log n)
 
+### Pointers in C
+#### char * stores an address, or a pointer variable
+##### Because of this nature of locating strings by memory address, one must be careful when associating variables to strings. This creates an opportunity for cross referencing the same piece of memory and therefore an opportunity for mutating data. 
