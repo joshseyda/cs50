@@ -21,10 +21,7 @@ int main(void)
     }
 
     //  Copy string into memory
-    for (int i = 0, n = strlen(s); i <= n; i++)
-    {
-        t[i] = s[i];
-    }
+    strcpy(t, s);
 
     // Capitalize first letter in string
     if  (strlen(t) > 0)
