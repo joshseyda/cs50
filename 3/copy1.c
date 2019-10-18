@@ -22,7 +22,10 @@ int main(void)
     }
 
     //  Copy string into memory
-    strcpy(t, s);
+    for (int i = 0, n = strlen(s); i <= n; i++)
+    {
+        t[i] = s[i];
+    }
 
     // Capitalize first letter in string
     if  (strlen(t) > 0)
@@ -33,4 +36,8 @@ int main(void)
     //  Print string twice!
     printf("s: %s\n", s);
     printf("t: %s\n", t);
+    
+    // Free memory
+    free(t);
+    return 0;
 }
