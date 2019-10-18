@@ -41,3 +41,4 @@
 ### Pointers in C
 #### char * stores an address, or a pointer variable
 ##### Because of this nature of locating strings by memory address, one must be careful when associating variables to strings. This creates an opportunity for cross referencing the same piece of memory and therefore an opportunity for mutating data. 
+##### A pointer is 64 bits or 8 bytes long
