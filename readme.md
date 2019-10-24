@@ -43,4 +43,5 @@
 ##### Because of this nature of locating strings by memory address, one must be careful when associating variables to strings. This creates an opportunity for cross referencing the same piece of memory and therefore an opportunity for mutating data. 
 ##### A pointer is 64 bits or 8 bytes long
 ##### Variables or temporary variables often have garbage values, or stray memory storage. When trying to mutate a set of variables it is beneficial to access them by address, as opposed to their values. 
-##### Any time a function is called, it gets the first slice of memory. This comes from the stack. 
+##### Any time a function is called, it gets the first slice of memory. This comes from the stack. malloc will take memory from the top of the heap down, coming to collide with the stack. Heap overflow is generally called a buffer overflow, stack a stack overflow. 
+##### valgrind => command line tool for checking a program for memory leaks. 
