@@ -49,7 +49,7 @@
 ##### realloc can be used to reallocate additional memory to the end of an array. This still happens linearly in the heap, but is not an efficient method.
 ##### Linked lists can be implemented to store and track data in a more efficent way. They allocate only what you need at the time of implementation, and add memory as you go, maintaining pointers to reference the order and location along the way. 
 ###### an example to implement initializing a linked list 
-``` javascript
+``` C
    typedef struct node
    {
     int n;
