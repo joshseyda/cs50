@@ -57,3 +57,4 @@
    }
    node;
 ``` 
+###### A linked list points only forward, a doublely linked list is bidirectional. When adding a new value to a sorted linked list, one must begin at the first node, and follow the pointer forward, maintaining a copy of the pointer on the new value as you go, never progressing past the place where the value should be stored, this also means that as it passes values, they must point at the new value, then trade back as the process moves forward. Linked list insertions are constant time, 0(1). 
