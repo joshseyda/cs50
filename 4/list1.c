@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -20,11 +21,15 @@ int main(void)
         if (size == capacity)
         {
             // realloc finds a place for the array to be stored in sequence, and moves the data
-            int *tmp = realloc(numbers, sizeof(int) * (size + 1));
-            if (tmp == NULL)
-            {
-                // quit here...
-            }
+            numbers = realloc(numbers, sizeof(int) * (size + 1));
+            capacity++;
         }
+
+        numbers[size] = number;
+        size++;
+    }
+    for (int i = 0; i < size; i ++)
+    {
+        printf("You inputted %i\n", numbers[i]);
     }
 }
