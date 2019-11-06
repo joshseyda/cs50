@@ -59,4 +59,17 @@
 ``` 
 ###### A linked list points only forward, a doublely linked list is bidirectional. When adding a new value to a sorted linked list, one must begin at the first node, and follow the pointer forward, maintaining a copy of the pointer on the new value as you go, never progressing past the place where the value should be stored, this also means that as it passes values, they must point at the new value, then trade back as the process moves forward. Linked list insertions are constant time, 0(1). 
 ##### -> syntax in C ::: n->number works like (*n).number :: go to  the location of pointer n and access the field in the number struct. 
-##### Hashing :::>>>---|> can be used to break apart data into smaller groups. hash functions recieve input and output a number usually but can output other things also. An example is organizing a group of people by their names, creating something like an array with 26 indexes (one for each letter) and each person's name becomes an element in a linked list at the index of the starting character. This is the fundamental pattern of a hash table, you have your keys on one side, and every value stored as a linked list on the other. Worst case time complexity is O(n) and best case is [O(n)/26]. This solution is still asymptotically linear in nature though.
+##### Hashing :::>>>---|> can be used to break apart data into smaller groups. hash functions recieve input and output a number usually but can output other things also. An example is organizing a group of people by their names, creating something like an array with 26 indexes (one for each letter) and each person's name becomes an element in a linked list at the index of the starting character. This is the fundamental pattern of a hash table, you have your keys on one side, and every value stored as a linked list on the other. Worst case time complexity is O(n) and best case is [O(n)/26]. This solution is still asymptotically linear in nature though. 
+##### Trees -<E-<E no matter what node you look at the value in it is bigger than the left child(node) and smaller than the right child(node). Each node is an integer with two additional values, the left node, and the right node. If you have n nodes the height of the tree is log(n). 
+
+```C
+typedef struct node
+{
+  int n;
+  struct node *left;
+  struct node *right;
+}
+node;
+```
+
+##### Trie : a tree where each node is an array. --=[][] :: these arrays can be reused by different nodes and maintain many to many connections. This method of structuring data will use much more memory, but can be significantly more time efficient. The time complexity is constant, O(n*m), where m is the length of the string or data set you are using. 
