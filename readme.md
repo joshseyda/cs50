@@ -73,3 +73,7 @@ node;
 ```
 
 ##### Trie : a tree where each node is an array. --=[][] :: these arrays can be reused by different nodes and maintain many to many connections. This method of structuring data will use much more memory, but can be significantly more time efficient. The time complexity is constant, O(n*m), where m is the length of the string or data set you are using. 
+
+## Revisiting Python!
+#### Python is an interpreted language, as opposed to C which is a compiled. The python flow from source code to process is as follows. 
+##### Source Code -> Compiler -> Byte Code -> Interpreter
