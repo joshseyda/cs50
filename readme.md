@@ -77,3 +77,10 @@ node;
 ## Revisiting Python!
 #### Python is an interpreted language, as opposed to C which is a compiled. The python flow from source code to process is as follows. 
 ##### Source Code -> Compiler -> Byte Code -> Interpreter
+### MVC : Model View Controller
+#### View -> The Response
+##### Aesthetic work, HTML, CSS, JSON etc.
+#### Controller -> The Request
+##### Getting something done logically. The vast majority of the first 6 weeks of this course, HTTP requests CLI, etc
+#### Model -> Data Demand
+##### Databases 
