@@ -23,3 +23,10 @@ def register():
     writer.writerow((request.form.get("name"), request.form.get("dorm")))
     file.close()
     return render_template("success.html")
+
+@app.route("/registered")
+def registered():
+    with open("registered.csv", "r") as file:
+        reader = csv.reader(file)
+        students = list(reader)
+    return render_template("registered.html", students=students)
