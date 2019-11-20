@@ -84,3 +84,30 @@ node;
 ##### Getting something done logically. The vast majority of the first 6 weeks of this course, HTTP requests CLI, etc
 #### Model -> Data Demand
 ##### Databases 
+##### Databases are infinitely more useful than CSVs for storing data. CSVs are at best linear time complexity
+
+### Relational Databases ::: SQL
+#### Rows and Columns =====> Tables
+#### SQLite a free and lightweight implementation of SQL :: cs50 uses sqlite3
+##### SQL supports a different set of verbs...
+``` SQL
+  CREATE...
+  INSERT...
+  SELECT...
+  UPDATE...
+  DELETE...
+```
+##### SQL does not need so much the logical instruction, rather it just requires the tasks. This is the main difference between declarative and imperative programming. We have implemented imperative programming in C and Python by deliberately manipulating control flow, this is not the convention in SQL, SQL has that functionality built out already, and it is just our work to use those tools. 
+
+``` SQL
+CREATE TABLE "registrants"
+  ('id' INTEGER PRIMARY KEY, 'name' TEXT, 'dorm' TEXT)
+
+INSERT INTO "registrants" ("id", "name", "dorm")
+  VALUES(1, 'David', 'Matthews')
+
+SELECT * FROM "registrants"
+
+UPDATE "registrants" SET "name" = 'David Malan' where id =1
+DELETE FROM "registrants" WHERE id = 1
+```
