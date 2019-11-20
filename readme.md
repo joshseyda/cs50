@@ -108,6 +108,23 @@ INSERT INTO "registrants" ("id", "name", "dorm")
 
 SELECT * FROM "registrants"
 
-UPDATE "registrants" SET "name" = 'David Malan' where id =1
+UPDATE "registrants" SET "name" = 'David Malan' WHERE id = 1
 DELETE FROM "registrants" WHERE id = 1
 ```
+##### some data types in SQL
+
+``` SQL
+BLOB 
+INTEGER
+NULL 
+REAL
+TEXT
+```
+##### BLOB stands for binary large object FYI
+##### there are some other unofficial types in sqlite, for example
+
+```SQL
+DATETIME
+NUMERIC
+```
+
