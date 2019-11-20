@@ -128,3 +128,21 @@ DATETIME
 NUMERIC
 ```
 
+##### some important built in functions
+
+``` SQL
+date
+time
+datetime
+```
+
+##### important design decisions in SQL
+
+```SQL
+PRIMARY KEY
+UNIQUE
+INDEX
+NOT NULL
+FOREIGN KEY
+```
+
