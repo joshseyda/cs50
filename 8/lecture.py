@@ -8,3 +8,4 @@ for row in rows:
   # print title of album
   print(row["Title"])
 
+# never trust the users input! SQL injection attacks are super dangerous. if you don't sanitize their input, anyone can run commands on the db
