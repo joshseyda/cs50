@@ -147,3 +147,9 @@ FOREIGN KEY
 ```
 
 ## Remembering JavaScript
+### JavaScript and Event-Based Programming
+#### Anonymous functions are a common element in JS programming
+#### JS is loosely typed, also dynamically typed
+#### Document Object Model is useful  for manipulating HTML elements with JavaScript. 
+##### One can trigger JavaScript activity with User Events and update the DOM accordingly
+
