@@ -154,8 +154,5 @@ FOREIGN KEY
 ##### One can trigger JavaScript activity with User Events and update the DOM accordingly
 ``` Javascript
 // manipulating the DOM based on user events...
-function greet(){
-  alert("hello, world");
-}
-document.getElementById("demo").onsubmit = greet;
+document.getElementById("demo").onsubmit = () => alert("hello, world");
 ```
