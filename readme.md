@@ -152,4 +152,10 @@ FOREIGN KEY
 #### JS is loosely typed, also dynamically typed
 #### Document Object Model is useful  for manipulating HTML elements with JavaScript. 
 ##### One can trigger JavaScript activity with User Events and update the DOM accordingly
-
+``` Javascript
+// manipulating the DOM based on user events...
+function greet(){
+  alert("hello, world");
+}
+document.getElementById("demo").onsubmit = greet;
+```
